@@ -10,7 +10,6 @@ import OptionsContainer from "../components/OptionsContainer";
 import Option from "../components/Filter/Option";
 import Title from "../components/Filter/Title";
 import { FilterDataContext } from "../providers/FilterDataProvider";
-import { useSearchParams } from "react-router-dom";
 const HomePage = () => {
   const { data: countries, isLoading, error } = countriesService().getAll();
   const { darkMode } = useContext(ThemeContext);

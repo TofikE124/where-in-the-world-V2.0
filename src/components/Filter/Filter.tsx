@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { useContext } from "react";
 import { FilterDataContext } from "../../providers/FilterDataProvider";
 
 interface Props {

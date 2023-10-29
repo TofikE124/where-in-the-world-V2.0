@@ -18,11 +18,7 @@ const CountryDetailsPage = () => {
   const navigate = useNavigate();
   const params = useParams();
   const { countryName } = params;
-  let {
-    data: country,
-    isLoading,
-    error,
-  } = countryDetailsService().get(countryName!, {
+  let { data: country } = countryDetailsService().get(countryName!, {
     params: {
       fields:
         "name,flags,population,capital,regionm,subregion ,borders,tld,currencies,languages",
